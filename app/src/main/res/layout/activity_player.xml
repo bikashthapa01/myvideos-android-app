@@ -9,7 +9,8 @@
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="220dp"
+        android:background="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
@@ -17,7 +18,7 @@
         <VideoView
             android:id="@+id/videoView"
             android:layout_width="match_parent"
-            android:layout_height="220dp" />
+            android:layout_height="match_parent" />
 
         <ProgressBar
             android:id="@+id/progressBar"
@@ -25,6 +26,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center" />
+
+        <ImageView
+            android:id="@+id/fullScreenOp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="5dp"
+            app:srcCompat="@drawable/ic_baseline_fullscreen_24" />
     </FrameLayout>
 
     <androidx.cardview.widget.CardView
